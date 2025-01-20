@@ -1,111 +1,128 @@
 """
-kafka_consumer_case.py
+alvaro_kafka_consumer.py
 
 Consume messages from a Kafka topic and process them.
 """
-
-#####################################
-# Import Modules
-#####################################
-
-# Import packages from Python Standard Library
 import os
-
-# Import external packages
+import sys
+import time
+import json
+from kafka import KafkaConsumer
 from dotenv import load_dotenv
-
-# Import functions from local modules
-from utils.utils_consumer import create_kafka_consumer
-from utils.utils_logger import logger
-
-#####################################
-# Load Environment Variables
-#####################################
-
-load_dotenv()
-
-#####################################
-# Getter Functions for .env Variables
-#####################################
+import logging
 
 
-def get_kafka_topic() -> str:
-    """Fetch Kafka topic from environment or use default."""
-    topic = os.getenv("KAFKA_TOPIC", "unknown_topic")
+def setup_logging():
+    """Sets up basic configuration for the logger."""
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s | %(levelname)s | %(name)s - %(message)s",
+        handlers=[logging.StreamHandler(), logging.FileHandler("logs/consumer_log.log")],
+    )
+    logger = logging.getLogger(__name__)
+    return logger
+
+
+logger = setup_logging()
+
+
+def create_kafka_consumer(topic: str, group_id: str):
+    """Creates a Kafka Consumer instance."""
+    try:
+        bootstrap_servers = os.environ.get("KAFKA_BROKER_ADDRESS", "localhost:9092")
+        consumer = KafkaConsumer(
+            bootstrap_servers=bootstrap_servers,
+            auto_offset_reset="earliest",  # Start from beginning
+            enable_auto_commit=True,
+            group_id=group_id,
+            value_deserializer=lambda x: x.decode('utf-8'),
+        )
+        consumer.subscribe([topic])
+        return consumer
+
+    except Exception as e:
+        logger.exception("Error creating Kafka consumer")
+        return None
+
+
+def get_kafka_topic():
+    topic = os.environ.get("KAFKA_TOPIC", "unknown_topic")
     logger.info(f"Kafka topic: {topic}")
     return topic
 
 
-def get_kafka_consumer_group_id() -> int:
-    """Fetch Kafka consumer group id from environment or use default."""
-    group_id: str = os.getenv("KAFKA_CONSUMER_GROUP_ID_JSON", "default_group")
+def get_kafka_consumer_group_id():
+    group_id = os.environ.get("KAFKA_CONSUMER_GROUP_ID", "default_consumer_group")
     logger.info(f"Kafka consumer group id: {group_id}")
     return group_id
 
 
-#####################################
-# Define a function to process a single message
-# #####################################
-
-
 def process_message(message: str) -> None:
-    """
-    Process a single message.
-
-    For now, this function simply logs the message.
-    You can extend it to perform other tasks, like counting words
-    or storing data in a database.
-
-    Args:
-        message (str): The message to process.
-    """
-    logger.info(f"Processing message: {message}")
+    try:
+        decoded_message = json.loads(message)
+        logger.info(f"Processing message: {decoded_message}")
+    except json.JSONDecodeError as e:
+        logger.error(f"Error decoding message: {e}, skipping message...")
+    except Exception as e:
+        logger.error(f"Error processing message: {e}, skipping message...")
 
 
-#####################################
-# Define main function for this module
-#####################################
+def verify_services():
+    try:
+        broker_address = os.environ.get("KAFKA_BROKER_ADDRESS", "localhost:9092")
+        import socket
+
+        socket.create_connection((broker_address.split(":")[0], int(broker_address.split(":")[1])))
+        logger.info("Services verified successfully.")
+        return True
+
+    except Exception as e:
+        logger.exception(f"Error verifying services: {e}")
+        return False
 
 
-def main() -> None:
-    """
-    Main entry point for the consumer.
+def create_kafka_producer():
+    try:
+        producer = KafkaProducer(
+            bootstrap_servers=os.environ.get("KAFKA_BROKER_ADDRESS", "localhost:9092")
+        )
+        return producer
+    except Exception as e:
+        logger.exception("Error creating Kafka producer:")
+        return None
 
-    - Reads the Kafka topic name and consumer group ID from environment variables.
-    - Creates a Kafka consumer using the `create_kafka_consumer` utility.
-    - Processes messages from the Kafka topic.
-    """
+
+
+
+
+def main():
     logger.info("START consumer.")
+    if not verify_services():
+        logger.critical("Failed to verify services. Exiting...")
+        return
 
-    # fetch .env content
     topic = get_kafka_topic()
     group_id = get_kafka_consumer_group_id()
-    logger.info(f"Consumer: Topic '{topic}' and group '{group_id}'...")
 
-    # Create the Kafka consumer using the helpful utility function.
     consumer = create_kafka_consumer(topic, group_id)
+    if not consumer:
+        logger.critical("Failed to create consumer. Exiting...")
+        return
 
-     # Poll and process messages
-    logger.info(f"Polling messages from topic '{topic}'...")
+    logger.info(f"Starting message consumption from topic '{topic}'...")
     try:
         for message in consumer:
-            message_str = message.value
-            logger.debug(f"Received message at offset {message.offset}: {message_str}")
-            process_message(message_str)
+            process_message(message.value)
     except KeyboardInterrupt:
         logger.warning("Consumer interrupted by user.")
     except Exception as e:
-        logger.error(f"Error while consuming messages: {e}")
+        logger.exception(f"An unexpected error occurred: {e}")
     finally:
         consumer.close()
         logger.info(f"Kafka consumer for topic '{topic}' closed.")
 
-    logger.info(f"END consumer for topic '{topic}' and group '{group_id}'.")
+    logger.info("END consumer.")
 
-
-#####################################
-# Conditional Execution
-#####################################
 
 if __name__ == "__main__":
     main()
