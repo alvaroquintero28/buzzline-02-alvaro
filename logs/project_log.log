@@ -4971,3 +4971,441 @@
 2025-01-20 15:47:22.635 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': Streaming data is fun.
 2025-01-20 15:47:23.639 | INFO     | __main__:generate_messages:77 - Generated buzz: This is a buzz message.
 2025-01-20 15:47:23.639 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': This is a buzz message.
+2025-01-20 15:59:30.224 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-20 15:59:30.225 | INFO     | __main__:main:76 - START producer.
+2025-01-20 15:59:30.225 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-20 15:59:30.229 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-20 15:59:30.229 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 15:59:30.571 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'alvaros-air.attlocal.net', 'port': 9092, 'rack': None}], 'cluster_id': 'AnYt-jYRSIqiVMhiZtsLaw', 'controller_id': 0}
+2025-01-20 15:59:30.572 | INFO     | __main__:get_kafka_topic:25 - Kafka topic: buzzline
+2025-01-20 15:59:30.572 | INFO     | __main__:get_message_interval:31 - Message interval: 1 seconds
+2025-01-20 15:59:30.572 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 15:59:30.572 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-20 15:59:30.683 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-20 15:59:30.684 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 15:59:31.021 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline' already exists. Clearing it out...
+2025-01-20 15:59:31.021 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 15:59:31.352 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-01-20 15:59:31.352 | INFO     | __main__:main:86 - Kafka topic 'buzzline' is ready.
+2025-01-20 15:59:31.352 | INFO     | __main__:main:88 - Starting message production to topic 'buzzline'...
+2025-01-20 15:59:31.352 | INFO     | __main__:generate_sports_data:61 - Generated sports data: {"game_id": "d22d6e8f-85a3-4ddf-ab20-93683e97b6bd", "sport": "hockey", "team1": "Team 1", "team2": "Team 6", "score1": 2, "score2": 5, "timestamp": "2025-01-20T15:59:31.352790"}
+2025-01-20 15:59:31.352 | ERROR    | __main__:generate_sports_data:68 - Error generating or sending data: 'bytes' object has no attribute 'encode'
+2025-01-20 15:59:31.353 | INFO     | __main__:generate_sports_data:71 - Kafka producer closed.
+2025-01-20 15:59:31.353 | INFO     | __main__:main:94 - END producer.
+2025-01-20 16:03:30.242 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-20 16:03:30.244 | INFO     | __main__:main:76 - START producer.
+2025-01-20 16:03:30.244 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-20 16:03:30.248 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-20 16:03:30.248 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 16:03:30.605 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'alvaros-air.attlocal.net', 'port': 9092, 'rack': None}], 'cluster_id': 'AnYt-jYRSIqiVMhiZtsLaw', 'controller_id': 0}
+2025-01-20 16:03:30.605 | INFO     | __main__:get_kafka_topic:25 - Kafka topic: buzzline
+2025-01-20 16:03:30.605 | INFO     | __main__:get_message_interval:31 - Message interval: 1 seconds
+2025-01-20 16:03:30.605 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 16:03:30.606 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-20 16:03:30.719 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-20 16:03:30.719 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 16:03:31.062 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline' already exists. Clearing it out...
+2025-01-20 16:03:31.063 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 16:03:31.400 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-01-20 16:03:31.400 | INFO     | __main__:main:86 - Kafka topic 'buzzline' is ready.
+2025-01-20 16:03:31.400 | INFO     | __main__:main:88 - Starting message production to topic 'buzzline'...
+2025-01-20 16:03:31.400 | INFO     | __main__:generate_sports_data:61 - Generated sports data: {"game_id": "f617863f-688c-4069-96c7-d5b640044e2f", "sport": "hockey", "team1": "Team 1", "team2": "Team 6", "score1": 2, "score2": 14, "timestamp": "2025-01-20T16:03:31.400822"}
+2025-01-20 16:03:31.401 | ERROR    | __main__:generate_sports_data:68 - Error generating or sending data: 'bytes' object has no attribute 'encode'
+2025-01-20 16:03:31.401 | INFO     | __main__:generate_sports_data:71 - Kafka producer closed.
+2025-01-20 16:03:31.401 | INFO     | __main__:main:94 - END producer.
+2025-01-20 16:05:03.874 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-20 16:05:03.875 | INFO     | __main__:main:76 - START producer.
+2025-01-20 16:05:03.875 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-20 16:05:03.878 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-20 16:05:03.878 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 16:05:04.222 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'alvaros-air.attlocal.net', 'port': 9092, 'rack': None}], 'cluster_id': 'AnYt-jYRSIqiVMhiZtsLaw', 'controller_id': 0}
+2025-01-20 16:05:04.223 | INFO     | __main__:get_kafka_topic:25 - Kafka topic: buzzline
+2025-01-20 16:05:04.223 | INFO     | __main__:get_message_interval:31 - Message interval: 1 seconds
+2025-01-20 16:05:04.223 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 16:05:04.223 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-20 16:05:04.337 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-20 16:05:04.337 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 16:05:04.677 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline' already exists. Clearing it out...
+2025-01-20 16:05:04.677 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 16:05:05.001 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-01-20 16:05:05.002 | INFO     | __main__:main:86 - Kafka topic 'buzzline' is ready.
+2025-01-20 16:05:05.002 | INFO     | __main__:main:88 - Starting message production to topic 'buzzline'...
+2025-01-20 16:05:05.002 | INFO     | __main__:generate_sports_data:61 - Generated sports data: {"game_id": "cc20c2b2-1efa-49a0-9f29-d12e2feea6cb", "sport": "basketball", "team1": "Team 5", "team2": "Team 10", "score1": 6, "score2": 3, "timestamp": "2025-01-20T16:05:05.002256"}
+2025-01-20 16:05:05.002 | ERROR    | __main__:generate_sports_data:68 - Error generating or sending data: 'bytes' object has no attribute 'encode'
+2025-01-20 16:05:05.002 | INFO     | __main__:generate_sports_data:71 - Kafka producer closed.
+2025-01-20 16:05:05.002 | INFO     | __main__:main:94 - END producer.
+2025-01-20 16:08:46.084 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-20 16:08:46.086 | INFO     | __main__:main:75 - START producer.
+2025-01-20 16:08:46.086 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-20 16:08:46.089 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-20 16:08:46.089 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 16:08:46.438 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'alvaros-air.attlocal.net', 'port': 9092, 'rack': None}], 'cluster_id': 'AnYt-jYRSIqiVMhiZtsLaw', 'controller_id': 0}
+2025-01-20 16:08:46.439 | INFO     | __main__:get_kafka_topic:25 - Kafka topic: buzzline
+2025-01-20 16:08:46.439 | INFO     | __main__:get_message_interval:31 - Message interval: 1 seconds
+2025-01-20 16:08:46.439 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 16:08:46.439 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-20 16:08:46.553 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-20 16:08:46.554 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 16:08:46.894 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline' already exists. Clearing it out...
+2025-01-20 16:08:46.894 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 16:08:47.226 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-01-20 16:08:47.226 | INFO     | __main__:main:85 - Kafka topic 'buzzline' is ready.
+2025-01-20 16:08:47.226 | INFO     | __main__:main:87 - Starting message production to topic 'buzzline'...
+2025-01-20 16:08:47.226 | INFO     | __main__:generate_sports_data:60 - Generated sports data: {"game_id": "ef8f8a99-edda-4883-91ed-e0c55f646360", "sport": "hockey", "team1": "Team 7", "team2": "Team 12", "score1": 18, "score2": 15, "timestamp": "2025-01-20T16:08:47.226569"}
+2025-01-20 16:08:47.226 | ERROR    | __main__:generate_sports_data:67 - Error generating or sending data: 'bytes' object has no attribute 'encode'
+2025-01-20 16:08:47.226 | INFO     | __main__:generate_sports_data:70 - Kafka producer closed.
+2025-01-20 16:08:47.227 | INFO     | __main__:main:93 - END producer.
+2025-01-20 16:10:33.170 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-20 16:10:33.171 | INFO     | __main__:main:73 - START producer.
+2025-01-20 16:10:33.171 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-20 16:10:33.175 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-20 16:10:33.175 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 16:10:33.516 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'alvaros-air.attlocal.net', 'port': 9092, 'rack': None}], 'cluster_id': 'AnYt-jYRSIqiVMhiZtsLaw', 'controller_id': 0}
+2025-01-20 16:10:33.517 | INFO     | __main__:get_kafka_topic:24 - Kafka topic: buzzline
+2025-01-20 16:10:33.517 | INFO     | __main__:get_message_interval:30 - Message interval: 1 seconds
+2025-01-20 16:10:33.517 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 16:10:33.517 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-20 16:10:33.628 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-20 16:10:33.628 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 16:10:33.960 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline' already exists. Clearing it out...
+2025-01-20 16:10:33.961 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-20 16:10:34.293 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-01-20 16:10:34.293 | INFO     | __main__:main:84 - Kafka topic 'buzzline' is ready.
+2025-01-20 16:10:34.293 | INFO     | __main__:main:86 - Starting message production to topic 'buzzline'...
+2025-01-20 16:10:34.293 | INFO     | __main__:generate_sports_data:56 - Generated sports data: {"game_id": "55ec1492-ead3-4236-aa05-b27d62da4cc8", "sport": "football", "team1": "Team 4", "team2": "Team 9", "score1": 5, "score2": 17, "timestamp": "2025-01-20T16:10:34.293668"}
+2025-01-20 16:10:34.293 | ERROR    | __main__:generate_sports_data:65 - An error occurred: 'bytes' object has no attribute 'encode'
+Traceback (most recent call last):
+
+  File "/Users/alvaroquintero/.pyenv/versions/3.10.12/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+           │         │     └ {'__name__': '__main__', '__doc__': '\nalvaro_kafka_producer.py\n\nProduce some streaming sports-related data and send it to ...
+           │         └ <code object <module> at 0x1050c3680, file "/Users/alvaroquintero/Data Streaming/buzzline-02-alvaro/producers/alvaro_kafka_pr...
+           └ <function _run_code at 0x1050265f0>
+  File "/Users/alvaroquintero/.pyenv/versions/3.10.12/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+         │     └ {'__name__': '__main__', '__doc__': '\nalvaro_kafka_producer.py\n\nProduce some streaming sports-related data and send it to ...
+         └ <code object <module> at 0x1050c3680, file "/Users/alvaroquintero/Data Streaming/buzzline-02-alvaro/producers/alvaro_kafka_pr...
+
+  File "/Users/alvaroquintero/Data Streaming/buzzline-02-alvaro/producers/alvaro_kafka_producer.py", line 96, in <module>
+    main()
+    └ <function main at 0x1064a4280>
+
+  File "/Users/alvaroquintero/Data Streaming/buzzline-02-alvaro/producers/alvaro_kafka_producer.py", line 87, in main
+    generate_sports_data(producer, topic, interval_seconds)
+    │                    │         │      └ 1
+    │                    │         └ 'buzzline'
+    │                    └ <kafka.producer.kafka.KafkaProducer object at 0x105da12d0>
+    └ <function generate_sports_data at 0x1064a4160>
+
+> File "/Users/alvaroquintero/Data Streaming/buzzline-02-alvaro/producers/alvaro_kafka_producer.py", line 58, in generate_sports_data
+    producer.send(topic=topic, value=data_json.encode('utf-8'))
+    │        │          │            │         └ <method 'encode' of 'str' objects>
+    │        │          │            └ '{"game_id": "55ec1492-ead3-4236-aa05-b27d62da4cc8", "sport": "football", "team1": "Team 4", "team2": "Team 9", "score1": 5, ...
+    │        │          └ 'buzzline'
+    │        └ <function KafkaProducer.send at 0x105cabd00>
+    └ <kafka.producer.kafka.KafkaProducer object at 0x105da12d0>
+
+  File "/Users/alvaroquintero/Data Streaming/buzzline-02-alvaro/.venv/lib/python3.10/site-packages/kafka/producer/kafka.py", line 581, in send
+    value_bytes = self._serialize(
+                  │    └ <function KafkaProducer._serialize at 0x105cabf40>
+                  └ <kafka.producer.kafka.KafkaProducer object at 0x105da12d0>
+  File "/Users/alvaroquintero/Data Streaming/buzzline-02-alvaro/.venv/lib/python3.10/site-packages/kafka/producer/kafka.py", line 714, in _serialize
+    return f(data)
+           │ └ b'{"game_id": "55ec1492-ead3-4236-aa05-b27d62da4cc8", "sport": "football", "team1": "Team 4", "team2": "Team 9", "score1": 5,...
+           └ <function create_kafka_producer.<locals>.value_serializer at 0x1064a52d0>
+
+  File "/Users/alvaroquintero/Data Streaming/buzzline-02-alvaro/utils/utils_producer.py", line 143, in value_serializer
+    return x.encode("utf-8")  # Default to string serialization
+           └ b'{"game_id": "55ec1492-ead3-4236-aa05-b27d62da4cc8", "sport": "football", "team1": "Team 4", "team2": "Team 9", "score1": 5,...
+
+AttributeError: 'bytes' object has no attribute 'encode'
+2025-01-20 16:10:34.299 | INFO     | __main__:generate_sports_data:68 - Kafka producer closed.
+2025-01-20 16:10:34.300 | INFO     | __main__:main:92 - END producer.
+2025-01-20 16:13:28.256 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-20 16:15:25,622 | INFO | __main__:79 - START producer.
+2025-01-20 16:15:25,622 | ERROR | __main__:96 - An unexpected error occurred: name 'verify_services' is not defined
+Traceback (most recent call last):
+  File "/Users/alvaroquintero/Data Streaming/buzzline-02-alvaro/producers/alvaro_kafka_producer.py", line 80, in main
+    verify_services()  # Verify services exist
+NameError: name 'verify_services' is not defined
+2025-01-20 16:15:25,623 | INFO | __main__:98 - END producer.
+2025-01-20 16:20:20,240 | INFO | __main__ - START producer.
+2025-01-20 16:20:20,240 | INFO | __main__ - Services verified successfully.
+2025-01-20 16:20:20,240 | INFO | __main__ - Kafka topic: buzzline
+2025-01-20 16:20:20,240 | INFO | __main__ - Message interval: 1 seconds
+2025-01-20 16:20:20,244 | INFO | kafka.conn - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-01-20 16:20:20,244 | INFO | kafka.conn - Probing node bootstrap-0 broker version
+2025-01-20 16:20:20,244 | INFO | kafka.conn - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-01-20 16:20:20,351 | INFO | kafka.conn - Broker version identified as 2.5.0
+2025-01-20 16:20:20,352 | INFO | kafka.conn - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-01-20 16:20:20,353 | INFO | __main__ - Kafka topic 'buzzline' is ready.
+2025-01-20 16:20:20,353 | INFO | __main__ - Starting message production to topic 'buzzline'...
+2025-01-20 16:20:20,353 | INFO | __main__ - Generated sports data: {'gameId': 'c1a45bce-587a-458d-91b9-96b629b72ef8', 'sport': 'Baseball', 'team1': 'Team 0', 'team2': 'Team 5', 'score1': 21, 'score2': 15, 'timestamp': '2025-01-20T16:20:20.353273'}
+2025-01-20 16:20:20,354 | ERROR | __main__ - An error occurred: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "/Users/alvaroquintero/Data Streaming/buzzline-02-alvaro/producers/alvaro_kafka_producer.py", line 66, in generate_sports_data
+    producer.send(topic=topic, value=data_json)
+  File "/Users/alvaroquintero/Data Streaming/buzzline-02-alvaro/.venv/lib/python3.10/site-packages/kafka/producer/kafka.py", line 581, in send
+    value_bytes = self._serialize(
+  File "/Users/alvaroquintero/Data Streaming/buzzline-02-alvaro/.venv/lib/python3.10/site-packages/kafka/producer/kafka.py", line 714, in _serialize
+    return f(data)
+  File "/Users/alvaroquintero/Data Streaming/buzzline-02-alvaro/producers/alvaro_kafka_producer.py", line 87, in <lambda>
+    producer = KafkaProducer(bootstrap_servers=kafka_broker, value_serializer=lambda v: json.dumps(v).encode('utf-8'))
+  File "/Users/alvaroquintero/.pyenv/versions/3.10.12/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/Users/alvaroquintero/.pyenv/versions/3.10.12/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Users/alvaroquintero/.pyenv/versions/3.10.12/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/alvaroquintero/.pyenv/versions/3.10.12/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bytes is not JSON serializable
+2025-01-20 16:20:20,357 | INFO | kafka.producer.kafka - Closing the Kafka producer with 9223372036.0 secs timeout.
+2025-01-20 16:20:20,358 | INFO | kafka.conn - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-01-20 16:20:20,358 | INFO | __main__ - Kafka producer closed.
+2025-01-20 16:20:20,358 | INFO | __main__ - END producer.
+2025-01-20 16:25:12,804 | INFO | __main__ - START producer.
+2025-01-20 16:25:12,804 | INFO | __main__ - Services verified successfully.
+2025-01-20 16:25:12,804 | INFO | __main__ - Kafka topic: buzzline
+2025-01-20 16:25:12,804 | INFO | __main__ - Message interval: 1 seconds
+2025-01-20 16:25:12,808 | INFO | kafka.conn - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-01-20 16:25:12,808 | INFO | kafka.conn - Probing node bootstrap-0 broker version
+2025-01-20 16:25:12,808 | INFO | kafka.conn - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-01-20 16:25:12,915 | INFO | kafka.conn - Broker version identified as 2.5.0
+2025-01-20 16:25:12,915 | INFO | kafka.conn - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-01-20 16:25:12,916 | INFO | __main__ - Topic 'buzzline' already exists.
+2025-01-20 16:25:12,917 | INFO | __main__ - Starting message production to topic 'buzzline'...
+2025-01-20 16:25:12,917 | INFO | __main__ - Generated sports data: {'gameId': '563019e1-5962-4de5-999f-447ce6a0c22f', 'sport': 'Baseball', 'team1': 'Team 2', 'team2': 'Team 7', 'score1': 13, 'score2': 13, 'timestamp': '2025-01-20T16:25:12.917244'}
+2025-01-20 16:25:12,935 | INFO | kafka.conn - <BrokerConnection node_id=0 host=alvaros-air.attlocal.net:9092 <connecting> [IPv4 ('192.168.1.148', 9092)]>: connecting to alvaros-air.attlocal.net:9092 [('192.168.1.148', 9092) IPv4]
+2025-01-20 16:25:12,935 | INFO | kafka.conn - <BrokerConnection node_id=0 host=alvaros-air.attlocal.net:9092 <connecting> [IPv4 ('192.168.1.148', 9092)]>: Connection complete.
+2025-01-20 16:25:12,935 | INFO | kafka.conn - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-01-20 16:25:13,921 | INFO | __main__ - Generated sports data: {'gameId': 'a16dae5e-cdc3-47c2-9812-086e7da415bf', 'sport': 'Basketball', 'team1': 'Team 3', 'team2': 'Team 8', 'score1': 14, 'score2': 14, 'timestamp': '2025-01-20T16:25:13.921826'}
+2025-01-20 16:25:14,927 | INFO | __main__ - Generated sports data: {'gameId': 'cf657b12-0940-45b4-89f0-450f2a885574', 'sport': 'Football', 'team1': 'Team 4', 'team2': 'Team 9', 'score1': 15, 'score2': 15, 'timestamp': '2025-01-20T16:25:14.927470'}
+2025-01-20 16:25:15,933 | INFO | __main__ - Generated sports data: {'gameId': '93486cf6-8dd6-4745-b28a-eb7f776a5bb7', 'sport': 'Hockey', 'team1': 'Team 5', 'team2': 'Team 10', 'score1': 16, 'score2': 16, 'timestamp': '2025-01-20T16:25:15.933521'}
+2025-01-20 16:25:16,940 | INFO | __main__ - Generated sports data: {'gameId': '74bc8836-e3d2-4216-9a88-fee4e325d1ba', 'sport': 'Baseball', 'team1': 'Team 6', 'team2': 'Team 11', 'score1': 17, 'score2': 17, 'timestamp': '2025-01-20T16:25:16.940106'}
+2025-01-20 16:25:17,945 | INFO | __main__ - Generated sports data: {'gameId': '270495e8-0966-43fb-92a7-0bff601db82f', 'sport': 'Basketball', 'team1': 'Team 7', 'team2': 'Team 12', 'score1': 18, 'score2': 18, 'timestamp': '2025-01-20T16:25:17.945689'}
+2025-01-20 16:25:18,951 | INFO | __main__ - Generated sports data: {'gameId': '1827728d-40e8-4af4-a862-a68ad3ff6a47', 'sport': 'Football', 'team1': 'Team 8', 'team2': 'Team 13', 'score1': 19, 'score2': 19, 'timestamp': '2025-01-20T16:25:18.951327'}
+2025-01-20 16:25:19,955 | INFO | __main__ - Generated sports data: {'gameId': '8e6a6f79-21e1-44b4-8f65-3fa73602b8cd', 'sport': 'Hockey', 'team1': 'Team 9', 'team2': 'Team 14', 'score1': 20, 'score2': 20, 'timestamp': '2025-01-20T16:25:19.955219'}
+2025-01-20 16:25:20,961 | INFO | __main__ - Generated sports data: {'gameId': '8f380fbb-c90f-423f-bb62-5351fc11a3b8', 'sport': 'Baseball', 'team1': 'Team 0', 'team2': 'Team 5', 'score1': 21, 'score2': 21, 'timestamp': '2025-01-20T16:25:20.961505'}
+2025-01-20 16:25:21,968 | INFO | __main__ - Generated sports data: {'gameId': '7c020e1e-6b2d-4533-be95-cf6729f5ccdc', 'sport': 'Basketball', 'team1': 'Team 1', 'team2': 'Team 6', 'score1': 22, 'score2': 1, 'timestamp': '2025-01-20T16:25:21.968058'}
+2025-01-20 16:25:22,972 | INFO | __main__ - Generated sports data: {'gameId': 'bea13a90-b993-44f4-9f81-293f0ba39c23', 'sport': 'Football', 'team1': 'Team 2', 'team2': 'Team 7', 'score1': 23, 'score2': 2, 'timestamp': '2025-01-20T16:25:22.972503'}
+2025-01-20 16:25:23,975 | INFO | __main__ - Generated sports data: {'gameId': '042cd58a-ba8d-4fb5-b7eb-ea9398ce3188', 'sport': 'Hockey', 'team1': 'Team 3', 'team2': 'Team 8', 'score1': 24, 'score2': 3, 'timestamp': '2025-01-20T16:25:23.975236'}
+2025-01-20 16:25:24,979 | INFO | __main__ - Generated sports data: {'gameId': '04cca8ed-46e3-4868-9ea6-0ffa8cf03eaa', 'sport': 'Baseball', 'team1': 'Team 4', 'team2': 'Team 9', 'score1': 25, 'score2': 4, 'timestamp': '2025-01-20T16:25:24.979169'}
+2025-01-20 16:25:25,985 | INFO | __main__ - Generated sports data: {'gameId': '3e37bb72-fc19-4473-a28b-f065b6d6a86c', 'sport': 'Basketball', 'team1': 'Team 5', 'team2': 'Team 10', 'score1': 26, 'score2': 5, 'timestamp': '2025-01-20T16:25:25.985633'}
+2025-01-20 16:25:26,988 | INFO | __main__ - Generated sports data: {'gameId': '1b6d2b6c-92cd-4cc4-856a-0a865f55f59f', 'sport': 'Football', 'team1': 'Team 6', 'team2': 'Team 11', 'score1': 27, 'score2': 6, 'timestamp': '2025-01-20T16:25:26.988541'}
+2025-01-20 16:25:27,993 | INFO | __main__ - Generated sports data: {'gameId': '6a68df85-ebf5-4c6c-a5d4-8332868a759f', 'sport': 'Hockey', 'team1': 'Team 7', 'team2': 'Team 12', 'score1': 28, 'score2': 7, 'timestamp': '2025-01-20T16:25:27.993661'}
+2025-01-20 16:25:29,000 | INFO | __main__ - Generated sports data: {'gameId': '606693a2-9cdc-4cd1-a612-c840e1975c35', 'sport': 'Basketball', 'team1': 'Team 9', 'team2': 'Team 14', 'score1': 30, 'score2': 9, 'timestamp': '2025-01-20T16:25:29.000315'}
+2025-01-20 16:25:30,005 | INFO | __main__ - Generated sports data: {'gameId': 'b174f5ee-c265-4485-a176-bc237c176db0', 'sport': 'Football', 'team1': 'Team 0', 'team2': 'Team 5', 'score1': 1, 'score2': 10, 'timestamp': '2025-01-20T16:25:30.005090'}
+2025-01-20 16:25:31,009 | INFO | __main__ - Generated sports data: {'gameId': '2e3d79b4-2436-433f-87cb-5229a6e01bfb', 'sport': 'Hockey', 'team1': 'Team 1', 'team2': 'Team 6', 'score1': 2, 'score2': 11, 'timestamp': '2025-01-20T16:25:31.009512'}
+2025-01-20 16:25:32,014 | INFO | __main__ - Generated sports data: {'gameId': '049755d0-2541-421d-9ead-c7a19c15c63f', 'sport': 'Baseball', 'team1': 'Team 2', 'team2': 'Team 7', 'score1': 3, 'score2': 12, 'timestamp': '2025-01-20T16:25:32.014773'}
+2025-01-20 16:25:33,019 | INFO | __main__ - Generated sports data: {'gameId': '76b134a2-7eb5-4659-87fe-71c1524e6e9b', 'sport': 'Basketball', 'team1': 'Team 3', 'team2': 'Team 8', 'score1': 4, 'score2': 13, 'timestamp': '2025-01-20T16:25:33.019099'}
+2025-01-20 16:25:34,024 | INFO | __main__ - Generated sports data: {'gameId': 'b5718ff1-6332-49a8-a7a9-b11f410365b7', 'sport': 'Football', 'team1': 'Team 4', 'team2': 'Team 9', 'score1': 5, 'score2': 14, 'timestamp': '2025-01-20T16:25:34.023847'}
+2025-01-20 16:25:35,027 | INFO | __main__ - Generated sports data: {'gameId': '3a244133-7387-40e8-b606-685c4737f809', 'sport': 'Hockey', 'team1': 'Team 5', 'team2': 'Team 10', 'score1': 6, 'score2': 15, 'timestamp': '2025-01-20T16:25:35.027391'}
+2025-01-20 16:25:36,029 | INFO | __main__ - Generated sports data: {'gameId': 'ae05204a-b56a-45cd-90e9-b74c9a6065df', 'sport': 'Baseball', 'team1': 'Team 6', 'team2': 'Team 11', 'score1': 7, 'score2': 16, 'timestamp': '2025-01-20T16:25:36.029565'}
+2025-01-20 16:25:37,031 | INFO | __main__ - Generated sports data: {'gameId': '46b43d7a-5038-43b8-9ae5-87e89253a285', 'sport': 'Basketball', 'team1': 'Team 7', 'team2': 'Team 12', 'score1': 8, 'score2': 17, 'timestamp': '2025-01-20T16:25:37.031200'}
+2025-01-20 16:25:38,035 | INFO | __main__ - Generated sports data: {'gameId': '3a0b487f-5f11-474b-aaa2-d0f9ef0c63eb', 'sport': 'Football', 'team1': 'Team 8', 'team2': 'Team 13', 'score1': 9, 'score2': 18, 'timestamp': '2025-01-20T16:25:38.034969'}
+2025-01-20 16:25:39,041 | INFO | __main__ - Generated sports data: {'gameId': '68dd7dd0-169d-4f0d-bcc8-78fc89fe2405', 'sport': 'Hockey', 'team1': 'Team 9', 'team2': 'Team 14', 'score1': 10, 'score2': 19, 'timestamp': '2025-01-20T16:25:39.041646'}
+2025-01-20 16:25:40,047 | INFO | __main__ - Generated sports data: {'gameId': 'ae6884ca-2eb5-477a-9b82-13e775a8943c', 'sport': 'Baseball', 'team1': 'Team 0', 'team2': 'Team 5', 'score1': 11, 'score2': 20, 'timestamp': '2025-01-20T16:25:40.047658'}
+2025-01-20 16:25:41,054 | INFO | __main__ - Generated sports data: {'gameId': '2ce19b34-f8df-4c61-9a63-b989ca7715ff', 'sport': 'Basketball', 'team1': 'Team 1', 'team2': 'Team 6', 'score1': 12, 'score2': 21, 'timestamp': '2025-01-20T16:25:41.054214'}
+2025-01-20 16:25:42,056 | INFO | __main__ - Generated sports data: {'gameId': '7edcf68e-8c76-4003-9bf1-164bb4d34713', 'sport': 'Football', 'team1': 'Team 2', 'team2': 'Team 7', 'score1': 13, 'score2': 1, 'timestamp': '2025-01-20T16:25:42.056285'}
+2025-01-20 16:25:43,059 | INFO | __main__ - Generated sports data: {'gameId': '92b84648-50cc-427f-a9dd-66ef29cb1e2a', 'sport': 'Hockey', 'team1': 'Team 3', 'team2': 'Team 8', 'score1': 14, 'score2': 2, 'timestamp': '2025-01-20T16:25:43.058759'}
+2025-01-20 16:25:44,065 | INFO | __main__ - Generated sports data: {'gameId': '2fc55429-3242-4d32-b3fc-bea1b6d2ada9', 'sport': 'Baseball', 'team1': 'Team 4', 'team2': 'Team 9', 'score1': 15, 'score2': 3, 'timestamp': '2025-01-20T16:25:44.064790'}
+2025-01-20 16:25:45,067 | INFO | __main__ - Generated sports data: {'gameId': '89aaf3cc-a8c9-424b-892a-1f72c10de376', 'sport': 'Basketball', 'team1': 'Team 5', 'team2': 'Team 10', 'score1': 16, 'score2': 4, 'timestamp': '2025-01-20T16:25:45.066804'}
+2025-01-20 16:25:46,073 | INFO | __main__ - Generated sports data: {'gameId': '3fc3e649-0506-4320-b155-ea85f7a3dd13', 'sport': 'Football', 'team1': 'Team 6', 'team2': 'Team 11', 'score1': 17, 'score2': 5, 'timestamp': '2025-01-20T16:25:46.073411'}
+2025-01-20 16:25:47,079 | INFO | __main__ - Generated sports data: {'gameId': 'a479994f-3748-493d-a823-f70c7e6ddd1a', 'sport': 'Hockey', 'team1': 'Team 7', 'team2': 'Team 12', 'score1': 18, 'score2': 6, 'timestamp': '2025-01-20T16:25:47.079483'}
+2025-01-20 16:25:48,083 | INFO | __main__ - Generated sports data: {'gameId': 'f8f8a824-07f1-4f4b-a24b-65edce29a4dd', 'sport': 'Baseball', 'team1': 'Team 8', 'team2': 'Team 13', 'score1': 19, 'score2': 7, 'timestamp': '2025-01-20T16:25:48.082863'}
+2025-01-20 16:25:49,087 | INFO | __main__ - Generated sports data: {'gameId': '3c862b24-5d49-4c7c-9acb-1200215f5466', 'sport': 'Basketball', 'team1': 'Team 9', 'team2': 'Team 14', 'score1': 20, 'score2': 8, 'timestamp': '2025-01-20T16:25:49.087420'}
+2025-01-20 16:25:50,090 | INFO | __main__ - Generated sports data: {'gameId': 'be427816-88bd-491d-9e69-314d6d0f6f4e', 'sport': 'Football', 'team1': 'Team 0', 'team2': 'Team 5', 'score1': 21, 'score2': 9, 'timestamp': '2025-01-20T16:25:50.090522'}
+2025-01-20 16:25:51,096 | INFO | __main__ - Generated sports data: {'gameId': '530cae7e-59bd-4755-b70c-831ff75e7e84', 'sport': 'Hockey', 'team1': 'Team 1', 'team2': 'Team 6', 'score1': 22, 'score2': 10, 'timestamp': '2025-01-20T16:25:51.096538'}
+2025-01-20 16:25:52,099 | INFO | __main__ - Generated sports data: {'gameId': '6a8f6f68-d4f6-40b4-a4f3-804d5a331db6', 'sport': 'Baseball', 'team1': 'Team 2', 'team2': 'Team 7', 'score1': 23, 'score2': 11, 'timestamp': '2025-01-20T16:25:52.099448'}
+2025-01-20 16:25:53,103 | INFO | __main__ - Generated sports data: {'gameId': 'ab905298-7a2f-433b-ad84-e3e13388f2d1', 'sport': 'Basketball', 'team1': 'Team 3', 'team2': 'Team 8', 'score1': 24, 'score2': 12, 'timestamp': '2025-01-20T16:25:53.103099'}
+2025-01-20 16:25:54,104 | INFO | __main__ - Generated sports data: {'gameId': 'c8043944-cabc-4da8-a93c-6cf2cc65fee0', 'sport': 'Football', 'team1': 'Team 4', 'team2': 'Team 9', 'score1': 25, 'score2': 13, 'timestamp': '2025-01-20T16:25:54.104817'}
+2025-01-20 16:25:55,107 | INFO | __main__ - Generated sports data: {'gameId': 'fb03fb13-24f3-4791-bc7d-76a5ac2b43df', 'sport': 'Hockey', 'team1': 'Team 5', 'team2': 'Team 10', 'score1': 26, 'score2': 14, 'timestamp': '2025-01-20T16:25:55.107702'}
+2025-01-20 16:25:56,110 | INFO | __main__ - Generated sports data: {'gameId': 'e0f96b9f-774c-4692-b6b1-409e716f7758', 'sport': 'Baseball', 'team1': 'Team 6', 'team2': 'Team 11', 'score1': 27, 'score2': 15, 'timestamp': '2025-01-20T16:25:56.110289'}
+2025-01-20 16:25:57,116 | INFO | __main__ - Generated sports data: {'gameId': 'ae30873b-f661-4f66-a6bc-eb77826ff28b', 'sport': 'Basketball', 'team1': 'Team 7', 'team2': 'Team 12', 'score1': 28, 'score2': 16, 'timestamp': '2025-01-20T16:25:57.116093'}
+2025-01-20 16:25:58,122 | INFO | __main__ - Generated sports data: {'gameId': '79867af8-489c-4ace-b61d-c79e0877bcb4', 'sport': 'Football', 'team1': 'Team 8', 'team2': 'Team 13', 'score1': 29, 'score2': 17, 'timestamp': '2025-01-20T16:25:58.121878'}
+2025-01-20 16:25:59,125 | INFO | __main__ - Generated sports data: {'gameId': '24a0a869-1f73-4a70-86a8-e5b7ab6206b7', 'sport': 'Hockey', 'team1': 'Team 9', 'team2': 'Team 14', 'score1': 30, 'score2': 18, 'timestamp': '2025-01-20T16:25:59.125080'}
+2025-01-20 16:26:00,126 | INFO | __main__ - Generated sports data: {'gameId': '5bde52f5-b41c-4395-a46e-1d55b236d61e', 'sport': 'Baseball', 'team1': 'Team 0', 'team2': 'Team 5', 'score1': 1, 'score2': 19, 'timestamp': '2025-01-20T16:26:00.126573'}
+2025-01-20 16:26:01,132 | INFO | __main__ - Generated sports data: {'gameId': '750c04bd-13b4-49dc-8d0f-b249ba402d15', 'sport': 'Basketball', 'team1': 'Team 1', 'team2': 'Team 6', 'score1': 2, 'score2': 20, 'timestamp': '2025-01-20T16:26:01.132489'}
+2025-01-20 16:26:02,137 | INFO | __main__ - Generated sports data: {'gameId': '5c7f52be-7f5a-4b06-ad02-605a563ad147', 'sport': 'Football', 'team1': 'Team 2', 'team2': 'Team 7', 'score1': 3, 'score2': 21, 'timestamp': '2025-01-20T16:26:02.137137'}
+2025-01-20 16:26:03,142 | INFO | __main__ - Generated sports data: {'gameId': '29354a39-475c-4907-a4f4-58e5cd1b1100', 'sport': 'Hockey', 'team1': 'Team 3', 'team2': 'Team 8', 'score1': 4, 'score2': 1, 'timestamp': '2025-01-20T16:26:03.141954'}
+2025-01-20 16:26:04,144 | INFO | __main__ - Generated sports data: {'gameId': '758faa31-4b18-416b-857f-06bbc7c48b89', 'sport': 'Baseball', 'team1': 'Team 4', 'team2': 'Team 9', 'score1': 5, 'score2': 2, 'timestamp': '2025-01-20T16:26:04.144191'}
+2025-01-20 16:26:05,149 | INFO | __main__ - Generated sports data: {'gameId': '5b12fae1-905d-4771-bcf5-8e690d65fc7b', 'sport': 'Basketball', 'team1': 'Team 5', 'team2': 'Team 10', 'score1': 6, 'score2': 3, 'timestamp': '2025-01-20T16:26:05.149354'}
+2025-01-20 16:26:06,156 | INFO | __main__ - Generated sports data: {'gameId': '9836a445-7aac-4b69-b4bd-f69e903a40f7', 'sport': 'Football', 'team1': 'Team 6', 'team2': 'Team 11', 'score1': 7, 'score2': 4, 'timestamp': '2025-01-20T16:26:06.155919'}
+2025-01-20 16:26:07,162 | INFO | __main__ - Generated sports data: {'gameId': 'c5b92cff-f4e6-4df4-9a8c-b4790905afa0', 'sport': 'Hockey', 'team1': 'Team 7', 'team2': 'Team 12', 'score1': 8, 'score2': 5, 'timestamp': '2025-01-20T16:26:07.162563'}
+2025-01-20 16:26:08,169 | INFO | __main__ - Generated sports data: {'gameId': '010f1ee7-63f2-40af-8544-217a9aebb08d', 'sport': 'Baseball', 'team1': 'Team 8', 'team2': 'Team 13', 'score1': 9, 'score2': 6, 'timestamp': '2025-01-20T16:26:08.169105'}
+2025-01-20 16:26:09,175 | INFO | __main__ - Generated sports data: {'gameId': '774e8063-b6a6-413c-bef2-1bdbdfd45651', 'sport': 'Basketball', 'team1': 'Team 9', 'team2': 'Team 14', 'score1': 10, 'score2': 7, 'timestamp': '2025-01-20T16:26:09.175330'}
+2025-01-20 16:26:10,181 | INFO | __main__ - Generated sports data: {'gameId': '5db0d896-a4a7-41ea-bfba-d76138f5253b', 'sport': 'Football', 'team1': 'Team 0', 'team2': 'Team 5', 'score1': 11, 'score2': 8, 'timestamp': '2025-01-20T16:26:10.181761'}
+2025-01-20 16:26:11,187 | INFO | __main__ - Generated sports data: {'gameId': 'b536ad72-a952-4356-9feb-8fca05448ccf', 'sport': 'Hockey', 'team1': 'Team 1', 'team2': 'Team 6', 'score1': 12, 'score2': 9, 'timestamp': '2025-01-20T16:26:11.187768'}
+2025-01-20 16:26:12,194 | INFO | __main__ - Generated sports data: {'gameId': '8c3803cc-d575-465d-894e-f0eb2134e58c', 'sport': 'Baseball', 'team1': 'Team 2', 'team2': 'Team 7', 'score1': 13, 'score2': 10, 'timestamp': '2025-01-20T16:26:12.194233'}
+2025-01-20 16:26:13,197 | INFO | __main__ - Generated sports data: {'gameId': 'cd625c8a-88c5-439f-9b31-c71d89a554ee', 'sport': 'Basketball', 'team1': 'Team 3', 'team2': 'Team 8', 'score1': 14, 'score2': 11, 'timestamp': '2025-01-20T16:26:13.197074'}
+2025-01-20 16:26:14,203 | INFO | __main__ - Generated sports data: {'gameId': '6587aea7-42b0-475d-aa8a-bf753acc5270', 'sport': 'Football', 'team1': 'Team 4', 'team2': 'Team 9', 'score1': 15, 'score2': 12, 'timestamp': '2025-01-20T16:26:14.203690'}
+2025-01-20 16:26:15,207 | INFO | __main__ - Generated sports data: {'gameId': 'c3e6cf92-d397-440e-bf23-c094e095f61b', 'sport': 'Hockey', 'team1': 'Team 5', 'team2': 'Team 10', 'score1': 16, 'score2': 13, 'timestamp': '2025-01-20T16:26:15.207089'}
+2025-01-20 16:26:16,211 | INFO | __main__ - Generated sports data: {'gameId': '8836aefd-c4ce-436a-b01a-b05613be415b', 'sport': 'Baseball', 'team1': 'Team 6', 'team2': 'Team 11', 'score1': 17, 'score2': 14, 'timestamp': '2025-01-20T16:26:16.210956'}
+2025-01-20 16:26:17,217 | INFO | __main__ - Generated sports data: {'gameId': '919b1fbb-a1b0-4e7f-896a-de7f6ec63880', 'sport': 'Basketball', 'team1': 'Team 7', 'team2': 'Team 12', 'score1': 18, 'score2': 15, 'timestamp': '2025-01-20T16:26:17.217346'}
+2025-01-20 16:26:18,223 | INFO | __main__ - Generated sports data: {'gameId': 'd51b60e2-f02d-4a6b-bc7b-773dcde6bf88', 'sport': 'Football', 'team1': 'Team 8', 'team2': 'Team 13', 'score1': 19, 'score2': 16, 'timestamp': '2025-01-20T16:26:18.223039'}
+2025-01-20 16:26:19,229 | INFO | __main__ - Generated sports data: {'gameId': 'a53994fc-eec8-4270-b46b-6535f3b6f200', 'sport': 'Hockey', 'team1': 'Team 9', 'team2': 'Team 14', 'score1': 20, 'score2': 17, 'timestamp': '2025-01-20T16:26:19.229075'}
+2025-01-20 16:26:20,234 | INFO | __main__ - Generated sports data: {'gameId': '8715ad8c-af50-4f90-bf26-c33e9e19edd0', 'sport': 'Baseball', 'team1': 'Team 0', 'team2': 'Team 5', 'score1': 21, 'score2': 18, 'timestamp': '2025-01-20T16:26:20.234083'}
+2025-01-20 16:26:21,240 | INFO | __main__ - Generated sports data: {'gameId': '3cd3d551-e28c-4efd-8041-29cc5c1a5b63', 'sport': 'Basketball', 'team1': 'Team 1', 'team2': 'Team 6', 'score1': 22, 'score2': 19, 'timestamp': '2025-01-20T16:26:21.240494'}
+2025-01-20 16:26:22,246 | INFO | __main__ - Generated sports data: {'gameId': '21909efb-60d8-4e3e-b961-31098e019a0d', 'sport': 'Football', 'team1': 'Team 2', 'team2': 'Team 7', 'score1': 23, 'score2': 20, 'timestamp': '2025-01-20T16:26:22.246794'}
+2025-01-20 16:26:23,248 | INFO | __main__ - Generated sports data: {'gameId': '7753936e-863e-4e98-8865-a267590c5e3b', 'sport': 'Hockey', 'team1': 'Team 3', 'team2': 'Team 8', 'score1': 24, 'score2': 21, 'timestamp': '2025-01-20T16:26:23.248061'}
+2025-01-20 16:26:24,254 | INFO | __main__ - Generated sports data: {'gameId': 'b3831511-6c58-47e8-b1e1-948d3cb63571', 'sport': 'Baseball', 'team1': 'Team 4', 'team2': 'Team 9', 'score1': 25, 'score2': 1, 'timestamp': '2025-01-20T16:26:24.254121'}
+2025-01-20 16:26:25,257 | INFO | __main__ - Generated sports data: {'gameId': 'd7b8b165-1769-4f7f-a04c-00f6ae38d9ec', 'sport': 'Basketball', 'team1': 'Team 5', 'team2': 'Team 10', 'score1': 26, 'score2': 2, 'timestamp': '2025-01-20T16:26:25.256900'}
+2025-01-20 16:26:26,263 | INFO | __main__ - Generated sports data: {'gameId': '0109d74b-84f7-41b8-909b-2fddd3fd8ea7', 'sport': 'Football', 'team1': 'Team 6', 'team2': 'Team 11', 'score1': 27, 'score2': 3, 'timestamp': '2025-01-20T16:26:26.263151'}
+2025-01-20 16:26:27,269 | INFO | __main__ - Generated sports data: {'gameId': '7765ad77-9dc8-4d12-9bd3-d6cdb8c673a0', 'sport': 'Hockey', 'team1': 'Team 7', 'team2': 'Team 12', 'score1': 28, 'score2': 4, 'timestamp': '2025-01-20T16:26:27.269166'}
+2025-01-20 16:26:28,271 | INFO | __main__ - Generated sports data: {'gameId': '5b03fc0b-79b6-417a-a196-28299f3e11ef', 'sport': 'Baseball', 'team1': 'Team 8', 'team2': 'Team 13', 'score1': 29, 'score2': 5, 'timestamp': '2025-01-20T16:26:28.271078'}
+2025-01-20 16:26:29,277 | INFO | __main__ - Generated sports data: {'gameId': '0270714c-a544-4069-9c26-1f995df10fa2', 'sport': 'Basketball', 'team1': 'Team 9', 'team2': 'Team 14', 'score1': 30, 'score2': 6, 'timestamp': '2025-01-20T16:26:29.277167'}
+2025-01-20 16:26:30,279 | INFO | __main__ - Generated sports data: {'gameId': '9f9650ba-7674-416c-abc5-dd6dcf67512b', 'sport': 'Football', 'team1': 'Team 0', 'team2': 'Team 5', 'score1': 1, 'score2': 7, 'timestamp': '2025-01-20T16:26:30.278880'}
+2025-01-20 16:26:31,284 | INFO | __main__ - Generated sports data: {'gameId': '3dd67604-dbd6-4969-9ff8-8205750b1a8c', 'sport': 'Hockey', 'team1': 'Team 1', 'team2': 'Team 6', 'score1': 2, 'score2': 8, 'timestamp': '2025-01-20T16:26:31.284618'}
+2025-01-20 16:26:32,287 | INFO | __main__ - Generated sports data: {'gameId': 'a191f8b8-ef0e-4f6a-a65f-34c48923562c', 'sport': 'Baseball', 'team1': 'Team 2', 'team2': 'Team 7', 'score1': 3, 'score2': 9, 'timestamp': '2025-01-20T16:26:32.287265'}
+2025-01-20 16:26:33,293 | INFO | __main__ - Generated sports data: {'gameId': 'c3b60e65-a237-48a7-a5a3-8872d822e563', 'sport': 'Basketball', 'team1': 'Team 3', 'team2': 'Team 8', 'score1': 4, 'score2': 10, 'timestamp': '2025-01-20T16:26:33.293077'}
+2025-01-20 16:26:34,299 | INFO | __main__ - Generated sports data: {'gameId': 'fd9d5d57-361d-4d8e-84ac-ea6b6cf94ce2', 'sport': 'Football', 'team1': 'Team 4', 'team2': 'Team 9', 'score1': 5, 'score2': 11, 'timestamp': '2025-01-20T16:26:34.298945'}
+2025-01-20 16:26:35,301 | INFO | __main__ - Generated sports data: {'gameId': 'ec05f684-7913-4067-91d6-b4cb735e167a', 'sport': 'Hockey', 'team1': 'Team 5', 'team2': 'Team 10', 'score1': 6, 'score2': 12, 'timestamp': '2025-01-20T16:26:35.301732'}
+2025-01-20 16:26:36,307 | INFO | __main__ - Generated sports data: {'gameId': 'ba44f6f8-031d-427b-a909-73f12e67f95d', 'sport': 'Baseball', 'team1': 'Team 6', 'team2': 'Team 11', 'score1': 7, 'score2': 13, 'timestamp': '2025-01-20T16:26:36.307592'}
+2025-01-20 16:26:37,309 | INFO | __main__ - Generated sports data: {'gameId': '08a4e264-bdc5-4fc7-aeed-b02cec0de2ac', 'sport': 'Basketball', 'team1': 'Team 7', 'team2': 'Team 12', 'score1': 8, 'score2': 14, 'timestamp': '2025-01-20T16:26:37.309310'}
+2025-01-20 16:26:38,315 | INFO | __main__ - Generated sports data: {'gameId': 'a67d1273-ccda-4d29-ae52-a2edf0830b4f', 'sport': 'Football', 'team1': 'Team 8', 'team2': 'Team 13', 'score1': 9, 'score2': 15, 'timestamp': '2025-01-20T16:26:38.315813'}
+2025-01-20 16:26:39,321 | INFO | __main__ - Generated sports data: {'gameId': 'e177731e-54b9-4ef1-8372-16f06af1e33a', 'sport': 'Hockey', 'team1': 'Team 9', 'team2': 'Team 14', 'score1': 10, 'score2': 16, 'timestamp': '2025-01-20T16:26:39.321648'}
+2025-01-20 16:26:40,326 | INFO | __main__ - Generated sports data: {'gameId': 'd17c0ccb-1c33-475c-8397-f2a42a6257c3', 'sport': 'Baseball', 'team1': 'Team 0', 'team2': 'Team 5', 'score1': 11, 'score2': 17, 'timestamp': '2025-01-20T16:26:40.326642'}
+2025-01-20 16:26:41,331 | INFO | __main__ - Generated sports data: {'gameId': '984ba844-246c-4441-b63a-de6ac70605a6', 'sport': 'Basketball', 'team1': 'Team 1', 'team2': 'Team 6', 'score1': 12, 'score2': 18, 'timestamp': '2025-01-20T16:26:41.331816'}
+2025-01-20 16:26:42,338 | INFO | __main__ - Generated sports data: {'gameId': '61253cbe-34fe-46b2-894e-3f25f205f21a', 'sport': 'Football', 'team1': 'Team 2', 'team2': 'Team 7', 'score1': 13, 'score2': 19, 'timestamp': '2025-01-20T16:26:42.338247'}
+2025-01-20 16:26:43,341 | INFO | __main__ - Generated sports data: {'gameId': '2705db8c-c654-46b1-96c9-b93b0e173023', 'sport': 'Hockey', 'team1': 'Team 3', 'team2': 'Team 8', 'score1': 14, 'score2': 20, 'timestamp': '2025-01-20T16:26:43.341813'}
+2025-01-20 16:26:44,347 | INFO | __main__ - Generated sports data: {'gameId': '3b59c896-c320-452f-a842-2b696cdf2088', 'sport': 'Baseball', 'team1': 'Team 4', 'team2': 'Team 9', 'score1': 15, 'score2': 21, 'timestamp': '2025-01-20T16:26:44.347268'}
+2025-01-20 16:26:45,352 | INFO | __main__ - Generated sports data: {'gameId': 'f2b458d9-3a49-4822-a7a5-073f55d04838', 'sport': 'Basketball', 'team1': 'Team 5', 'team2': 'Team 10', 'score1': 16, 'score2': 1, 'timestamp': '2025-01-20T16:26:45.352832'}
+2025-01-20 16:26:46,358 | INFO | __main__ - Generated sports data: {'gameId': '2bb7661b-5a9b-4981-8754-ff3dd9546036', 'sport': 'Football', 'team1': 'Team 6', 'team2': 'Team 11', 'score1': 17, 'score2': 2, 'timestamp': '2025-01-20T16:26:46.358697'}
+2025-01-20 16:26:47,362 | INFO | __main__ - Generated sports data: {'gameId': '464387fa-ac5a-40a7-847b-c295ad61bb38', 'sport': 'Hockey', 'team1': 'Team 7', 'team2': 'Team 12', 'score1': 18, 'score2': 3, 'timestamp': '2025-01-20T16:26:47.361963'}
+2025-01-20 16:26:48,367 | INFO | __main__ - Generated sports data: {'gameId': '32bd1b7a-934a-45fc-b44a-2368294b4ded', 'sport': 'Baseball', 'team1': 'Team 8', 'team2': 'Team 13', 'score1': 19, 'score2': 4, 'timestamp': '2025-01-20T16:26:48.367626'}
+2025-01-20 16:26:49,371 | INFO | __main__ - Generated sports data: {'gameId': '4d84e6d5-0941-4327-8ff0-cb7e1617d58e', 'sport': 'Basketball', 'team1': 'Team 9', 'team2': 'Team 14', 'score1': 20, 'score2': 5, 'timestamp': '2025-01-20T16:26:49.370871'}
+2025-01-20 16:28:59,425 | INFO | __main__ - START producer.
+2025-01-20 16:28:59,426 | INFO | __main__ - Services verified successfully.
+2025-01-20 16:28:59,426 | INFO | __main__ - Kafka topic: buzzline
+2025-01-20 16:28:59,426 | INFO | __main__ - Message interval: 1 seconds
+2025-01-20 16:28:59,429 | INFO | kafka.conn - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-01-20 16:28:59,429 | INFO | kafka.conn - Probing node bootstrap-0 broker version
+2025-01-20 16:28:59,430 | INFO | kafka.conn - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-01-20 16:28:59,536 | INFO | kafka.conn - Broker version identified as 2.5.0
+2025-01-20 16:28:59,536 | INFO | kafka.conn - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-01-20 16:28:59,537 | INFO | __main__ - Topic 'buzzline' already exists.
+2025-01-20 16:28:59,537 | INFO | __main__ - Starting message production to topic 'buzzline'...
+2025-01-20 16:28:59,537 | INFO | __main__ - [96m{"gameId": "3637fd09-6dce-4261-a507-4566af0c2968", "sport": "Hockey", "team1": "Team 9", "team2": "Team 14", "score1": 30, "score2": 9, "timestamp": "2025-01-20T16:28:59.537921"}[0m
+2025-01-20 16:28:59,538 | ERROR | __main__ - An error occurred: Object of type bytes is not JSON serializable
+Traceback (most recent call last):
+  File "/Users/alvaroquintero/Data Streaming/buzzline-02-alvaro/producers/alvaro_kafka_producer.py", line 77, in generate_sports_data
+    producer.send(topic=topic, value=data_json.encode("utf-8"))
+  File "/Users/alvaroquintero/Data Streaming/buzzline-02-alvaro/.venv/lib/python3.10/site-packages/kafka/producer/kafka.py", line 581, in send
+    value_bytes = self._serialize(
+  File "/Users/alvaroquintero/Data Streaming/buzzline-02-alvaro/.venv/lib/python3.10/site-packages/kafka/producer/kafka.py", line 714, in _serialize
+    return f(data)
+  File "/Users/alvaroquintero/Data Streaming/buzzline-02-alvaro/producers/alvaro_kafka_producer.py", line 99, in <lambda>
+    producer = KafkaProducer(bootstrap_servers=kafka_broker, value_serializer=lambda v: json.dumps(v).encode("utf-8"))
+  File "/Users/alvaroquintero/.pyenv/versions/3.10.12/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/Users/alvaroquintero/.pyenv/versions/3.10.12/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Users/alvaroquintero/.pyenv/versions/3.10.12/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/alvaroquintero/.pyenv/versions/3.10.12/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bytes is not JSON serializable
+2025-01-20 16:28:59,541 | INFO | kafka.producer.kafka - Closing the Kafka producer with 9223372036.0 secs timeout.
+2025-01-20 16:28:59,541 | INFO | kafka.conn - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-01-20 16:28:59,541 | INFO | __main__ - Kafka producer closed.
+2025-01-20 16:28:59,541 | INFO | __main__ - END producer.
+2025-01-20 16:30:38,568 | INFO | __main__ - START producer.
+2025-01-20 16:30:38,570 | INFO | __main__ - Services verified successfully.
+2025-01-20 16:30:38,570 | INFO | __main__ - Kafka topic: buzzline
+2025-01-20 16:30:38,570 | INFO | __main__ - Message interval: 1 seconds
+2025-01-20 16:30:38,571 | INFO | kafka.conn - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-01-20 16:30:38,571 | INFO | kafka.conn - Probing node bootstrap-0 broker version
+2025-01-20 16:30:38,572 | INFO | kafka.conn - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-01-20 16:30:38,678 | INFO | kafka.conn - Broker version identified as 2.5.0
+2025-01-20 16:30:38,678 | INFO | kafka.conn - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-01-20 16:30:38,679 | INFO | __main__ - Topic 'buzzline' already exists.
+2025-01-20 16:30:38,679 | INFO | __main__ - Starting message production to topic 'buzzline'...
+2025-01-20 16:30:38,679 | INFO | __main__ - Sending message: {"gameId": "83696e66-8d00-4c48-a6dd-2d93d51b2333", "sport": "Football", "team1": "Team 8", "team2": "Team 13", "score1": 9, "score2": 3, "timestamp": "2025-01-20T16:30:38.679787"}
+2025-01-20 16:30:38,692 | INFO | kafka.conn - <BrokerConnection node_id=0 host=alvaros-air.attlocal.net:9092 <connecting> [IPv4 ('192.168.1.148', 9092)]>: connecting to alvaros-air.attlocal.net:9092 [('192.168.1.148', 9092) IPv4]
+2025-01-20 16:30:38,693 | INFO | kafka.conn - <BrokerConnection node_id=0 host=alvaros-air.attlocal.net:9092 <connecting> [IPv4 ('192.168.1.148', 9092)]>: Connection complete.
+2025-01-20 16:30:38,693 | INFO | kafka.conn - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-01-20 16:30:39,685 | INFO | __main__ - Sending message: {"gameId": "3b14c025-1b92-4308-99d8-f4de1fdf8099", "sport": "Hockey", "team1": "Team 9", "team2": "Team 14", "score1": 10, "score2": 4, "timestamp": "2025-01-20T16:30:39.685808"}
+2025-01-20 16:30:40,691 | INFO | __main__ - Sending message: {"gameId": "bfb35c9b-e985-42cc-84d6-cd4577f7a956", "sport": "Baseball", "team1": "Team 0", "team2": "Team 5", "score1": 11, "score2": 5, "timestamp": "2025-01-20T16:30:40.691415"}
+2025-01-20 16:30:41,693 | INFO | __main__ - Sending message: {"gameId": "2eb5a58f-f010-4904-a62b-737ee1d31d88", "sport": "Basketball", "team1": "Team 1", "team2": "Team 6", "score1": 12, "score2": 6, "timestamp": "2025-01-20T16:30:41.693620"}
+2025-01-20 16:30:42,696 | INFO | __main__ - Sending message: {"gameId": "2c49cdef-f56f-4094-a6c6-81b120490767", "sport": "Football", "team1": "Team 2", "team2": "Team 7", "score1": 13, "score2": 7, "timestamp": "2025-01-20T16:30:42.696241"}
+2025-01-20 16:30:43,700 | INFO | __main__ - Sending message: {"gameId": "86302f1a-82f3-4854-8688-24f9776abdeb", "sport": "Hockey", "team1": "Team 3", "team2": "Team 8", "score1": 14, "score2": 8, "timestamp": "2025-01-20T16:30:43.700036"}
+2025-01-20 16:30:44,705 | INFO | __main__ - Sending message: {"gameId": "898686cf-84fc-433f-afaa-145ef9413272", "sport": "Baseball", "team1": "Team 4", "team2": "Team 9", "score1": 15, "score2": 9, "timestamp": "2025-01-20T16:30:44.705719"}
+2025-01-20 16:30:45,712 | INFO | __main__ - Sending message: {"gameId": "22c8ea2f-dc57-433b-8b68-d4a2f641fcda", "sport": "Basketball", "team1": "Team 5", "team2": "Team 10", "score1": 16, "score2": 10, "timestamp": "2025-01-20T16:30:45.712314"}
+2025-01-20 16:30:46,717 | INFO | __main__ - Sending message: {"gameId": "c88e20e2-3eb7-4d66-9e78-d0296d02078d", "sport": "Football", "team1": "Team 6", "team2": "Team 11", "score1": 17, "score2": 11, "timestamp": "2025-01-20T16:30:46.716805"}
+2025-01-20 16:30:47,719 | INFO | __main__ - Sending message: {"gameId": "b973e810-e087-423d-889b-504fe4bc8dec", "sport": "Hockey", "team1": "Team 7", "team2": "Team 12", "score1": 18, "score2": 12, "timestamp": "2025-01-20T16:30:47.719739"}
+2025-01-20 16:30:48,726 | INFO | __main__ - Sending message: {"gameId": "aee9058e-b6d8-4150-a5f4-4177d5d2fcd8", "sport": "Baseball", "team1": "Team 8", "team2": "Team 13", "score1": 19, "score2": 13, "timestamp": "2025-01-20T16:30:48.726169"}
+2025-01-20 16:30:49,732 | INFO | __main__ - Sending message: {"gameId": "4a47e72c-2e6a-43ac-aacd-2c371c967916", "sport": "Basketball", "team1": "Team 9", "team2": "Team 14", "score1": 20, "score2": 14, "timestamp": "2025-01-20T16:30:49.732513"}
+2025-01-20 16:30:50,736 | INFO | __main__ - Sending message: {"gameId": "80bcde54-f768-4d9a-a2da-053f63b94ab3", "sport": "Football", "team1": "Team 0", "team2": "Team 5", "score1": 21, "score2": 15, "timestamp": "2025-01-20T16:30:50.735904"}
+2025-01-20 16:30:51,739 | INFO | __main__ - Sending message: {"gameId": "cb05dd8d-1b25-4980-ab09-88a05ecaa9e8", "sport": "Hockey", "team1": "Team 1", "team2": "Team 6", "score1": 22, "score2": 16, "timestamp": "2025-01-20T16:30:51.739510"}
+2025-01-20 16:30:52,741 | INFO | __main__ - Sending message: {"gameId": "70434656-9d5d-44b1-9587-16480e4a882e", "sport": "Baseball", "team1": "Team 2", "team2": "Team 7", "score1": 23, "score2": 17, "timestamp": "2025-01-20T16:30:52.741487"}
+2025-01-20 16:30:53,747 | INFO | __main__ - Sending message: {"gameId": "a7448783-d733-4a53-b585-deb17c61eaba", "sport": "Basketball", "team1": "Team 3", "team2": "Team 8", "score1": 24, "score2": 18, "timestamp": "2025-01-20T16:30:53.746919"}
+2025-01-20 16:30:54,753 | INFO | __main__ - Sending message: {"gameId": "e4f95324-40b2-4ee3-8339-96563df2e086", "sport": "Football", "team1": "Team 4", "team2": "Team 9", "score1": 25, "score2": 19, "timestamp": "2025-01-20T16:30:54.753378"}
+2025-01-20 16:30:55,758 | INFO | __main__ - Sending message: {"gameId": "ddeba0c4-6d7f-488e-9ebd-ae80dd3a7ed5", "sport": "Hockey", "team1": "Team 5", "team2": "Team 10", "score1": 26, "score2": 20, "timestamp": "2025-01-20T16:30:55.758624"}
+2025-01-20 16:30:56,764 | INFO | __main__ - Sending message: {"gameId": "d23b05a2-20f2-4020-87e1-3113217bc39a", "sport": "Baseball", "team1": "Team 6", "team2": "Team 11", "score1": 27, "score2": 21, "timestamp": "2025-01-20T16:30:56.764207"}
+2025-01-20 16:30:57,767 | INFO | __main__ - Sending message: {"gameId": "311c1a65-ed30-47a2-9857-d419dd844749", "sport": "Basketball", "team1": "Team 7", "team2": "Team 12", "score1": 28, "score2": 1, "timestamp": "2025-01-20T16:30:57.767693"}
+2025-01-20 16:30:58,771 | INFO | __main__ - Sending message: {"gameId": "b8539782-0c70-46bb-b7bd-f1d5e7d0b6df", "sport": "Football", "team1": "Team 8", "team2": "Team 13", "score1": 29, "score2": 2, "timestamp": "2025-01-20T16:30:58.771377"}
+2025-01-20 16:30:59,777 | INFO | __main__ - Sending message: {"gameId": "158a2277-6d13-4722-a8b7-dc08e1541d0a", "sport": "Hockey", "team1": "Team 9", "team2": "Team 14", "score1": 30, "score2": 3, "timestamp": "2025-01-20T16:30:59.776971"}
+2025-01-20 16:31:00,782 | INFO | __main__ - Sending message: {"gameId": "0bf94966-aa1c-4940-8777-4b67aaf7c43a", "sport": "Baseball", "team1": "Team 0", "team2": "Team 5", "score1": 1, "score2": 4, "timestamp": "2025-01-20T16:31:00.782405"}
+2025-01-20 16:31:01,788 | INFO | __main__ - Sending message: {"gameId": "6b1d284d-265a-41b2-8470-bfd32b34ebaf", "sport": "Basketball", "team1": "Team 1", "team2": "Team 6", "score1": 2, "score2": 5, "timestamp": "2025-01-20T16:31:01.787937"}
+2025-01-20 16:31:02,793 | INFO | __main__ - Sending message: {"gameId": "60c6ade1-6bb0-4bc5-bcd7-f40f9acf3de3", "sport": "Football", "team1": "Team 2", "team2": "Team 7", "score1": 3, "score2": 6, "timestamp": "2025-01-20T16:31:02.793890"}
+2025-01-20 16:31:03,796 | INFO | __main__ - Sending message: {"gameId": "753a872b-c56e-485f-9f95-8634dd241623", "sport": "Hockey", "team1": "Team 3", "team2": "Team 8", "score1": 4, "score2": 7, "timestamp": "2025-01-20T16:31:03.796589"}
+2025-01-20 16:31:04,802 | INFO | __main__ - Sending message: {"gameId": "af519094-6204-49ab-bf5f-bac986a95c46", "sport": "Baseball", "team1": "Team 4", "team2": "Team 9", "score1": 5, "score2": 8, "timestamp": "2025-01-20T16:31:04.802264"}
+2025-01-20 16:31:05,805 | INFO | __main__ - Sending message: {"gameId": "8decc76c-bbd8-4bae-9a4e-422b318301a2", "sport": "Basketball", "team1": "Team 5", "team2": "Team 10", "score1": 6, "score2": 9, "timestamp": "2025-01-20T16:31:05.805514"}
+2025-01-20 16:31:06,812 | INFO | __main__ - Sending message: {"gameId": "0b9226fc-e6b6-4729-bed2-4e9715201f83", "sport": "Football", "team1": "Team 6", "team2": "Team 11", "score1": 7, "score2": 10, "timestamp": "2025-01-20T16:31:06.812182"}
+2025-01-20 16:31:07,817 | INFO | __main__ - Sending message: {"gameId": "cd963e1f-78a6-446d-ac4e-3c7931816da5", "sport": "Hockey", "team1": "Team 7", "team2": "Team 12", "score1": 8, "score2": 11, "timestamp": "2025-01-20T16:31:07.817613"}
+2025-01-20 16:31:08,819 | INFO | __main__ - Sending message: {"gameId": "e83dd313-b12a-4b89-a997-c75dee84655c", "sport": "Baseball", "team1": "Team 8", "team2": "Team 13", "score1": 9, "score2": 12, "timestamp": "2025-01-20T16:31:08.819164"}
+2025-01-20 16:31:09,821 | INFO | __main__ - Sending message: {"gameId": "09d7f597-62fe-4067-ad24-68ebe3fddfb2", "sport": "Basketball", "team1": "Team 9", "team2": "Team 14", "score1": 10, "score2": 13, "timestamp": "2025-01-20T16:31:09.821274"}
+2025-01-20 16:31:10,827 | INFO | __main__ - Sending message: {"gameId": "d512928d-f7c7-4ed7-872b-8dc23241fac3", "sport": "Football", "team1": "Team 0", "team2": "Team 5", "score1": 11, "score2": 14, "timestamp": "2025-01-20T16:31:10.827389"}
+2025-01-20 16:31:11,833 | INFO | __main__ - Sending message: {"gameId": "afb007a1-302f-4139-855a-89dc45243d98", "sport": "Hockey", "team1": "Team 1", "team2": "Team 6", "score1": 12, "score2": 15, "timestamp": "2025-01-20T16:31:11.833017"}
+2025-01-20 16:31:12,837 | INFO | __main__ - Sending message: {"gameId": "cc018175-96c7-4b59-8334-45f9ff75d046", "sport": "Baseball", "team1": "Team 2", "team2": "Team 7", "score1": 13, "score2": 16, "timestamp": "2025-01-20T16:31:12.837685"}
+2025-01-20 16:31:13,844 | INFO | __main__ - Sending message: {"gameId": "6069ad07-3c17-48f6-a31e-40b3f0175d6d", "sport": "Basketball", "team1": "Team 3", "team2": "Team 8", "score1": 14, "score2": 17, "timestamp": "2025-01-20T16:31:13.843878"}
+2025-01-20 16:31:14,845 | INFO | __main__ - Sending message: {"gameId": "53b0e87a-56fe-45f8-97a8-c4f71a5c35e6", "sport": "Football", "team1": "Team 4", "team2": "Team 9", "score1": 15, "score2": 18, "timestamp": "2025-01-20T16:31:14.845827"}
+2025-01-20 16:31:15,849 | INFO | __main__ - Sending message: {"gameId": "fa5aa5ec-a588-45de-abd7-c95d74a7df52", "sport": "Hockey", "team1": "Team 5", "team2": "Team 10", "score1": 16, "score2": 19, "timestamp": "2025-01-20T16:31:15.849624"}
+2025-01-20 16:31:16,850 | INFO | __main__ - Sending message: {"gameId": "e46da7ed-8a20-43db-9047-651212fb220c", "sport": "Baseball", "team1": "Team 6", "team2": "Team 11", "score1": 17, "score2": 20, "timestamp": "2025-01-20T16:31:16.850685"}
+2025-01-20 16:31:17,856 | INFO | __main__ - Sending message: {"gameId": "b4d2b425-2291-4794-b46e-2cb6eb890de3", "sport": "Basketball", "team1": "Team 7", "team2": "Team 12", "score1": 18, "score2": 21, "timestamp": "2025-01-20T16:31:17.856393"}
+2025-01-20 16:31:18,862 | INFO | __main__ - Sending message: {"gameId": "51506799-654a-4df8-b0d4-07601a9db1d2", "sport": "Football", "team1": "Team 8", "team2": "Team 13", "score1": 19, "score2": 1, "timestamp": "2025-01-20T16:31:18.862118"}
+2025-01-20 16:31:19,867 | INFO | __main__ - Sending message: {"gameId": "07a81c60-3919-43ea-9840-2e18173bd49d", "sport": "Hockey", "team1": "Team 9", "team2": "Team 14", "score1": 20, "score2": 2, "timestamp": "2025-01-20T16:31:19.867340"}
+2025-01-20 16:31:20,873 | INFO | __main__ - Sending message: {"gameId": "463ea1ac-c12c-4b7b-a23d-577b920efc20", "sport": "Baseball", "team1": "Team 0", "team2": "Team 5", "score1": 21, "score2": 3, "timestamp": "2025-01-20T16:31:20.873047"}
+2025-01-20 16:31:21,880 | INFO | __main__ - Sending message: {"gameId": "c51b125c-05a3-46a1-80df-b6d60cccba97", "sport": "Basketball", "team1": "Team 1", "team2": "Team 6", "score1": 22, "score2": 4, "timestamp": "2025-01-20T16:31:21.879743"}
+2025-01-20 16:31:22,883 | INFO | __main__ - Sending message: {"gameId": "a51c8828-e6f4-4dfc-9964-76b05e9f4223", "sport": "Football", "team1": "Team 2", "team2": "Team 7", "score1": 23, "score2": 5, "timestamp": "2025-01-20T16:31:22.883409"}
+2025-01-20 16:31:23,886 | INFO | __main__ - Sending message: {"gameId": "49f7b9f6-6012-4c95-a9e5-5d99c52af27c", "sport": "Hockey", "team1": "Team 3", "team2": "Team 8", "score1": 24, "score2": 6, "timestamp": "2025-01-20T16:31:23.886549"}
+2025-01-20 16:31:24,892 | INFO | __main__ - Sending message: {"gameId": "e42883ff-56be-4604-8a2e-abc10543af7b", "sport": "Baseball", "team1": "Team 4", "team2": "Team 9", "score1": 25, "score2": 7, "timestamp": "2025-01-20T16:31:24.892264"}
+2025-01-20 16:31:25,899 | INFO | __main__ - Sending message: {"gameId": "31a2d963-1fee-41bb-ac34-16861abdcc55", "sport": "Basketball", "team1": "Team 5", "team2": "Team 10", "score1": 26, "score2": 8, "timestamp": "2025-01-20T16:31:25.898951"}
+2025-01-20 16:31:26,905 | INFO | __main__ - Sending message: {"gameId": "1482bb18-d311-464e-9439-e3f43ce66a40", "sport": "Football", "team1": "Team 6", "team2": "Team 11", "score1": 27, "score2": 9, "timestamp": "2025-01-20T16:31:26.905630"}
+2025-01-20 16:31:27,911 | INFO | __main__ - Sending message: {"gameId": "388b1358-4c29-4107-aaf4-9ee9c50c9b04", "sport": "Hockey", "team1": "Team 7", "team2": "Team 12", "score1": 28, "score2": 10, "timestamp": "2025-01-20T16:31:27.911827"}
+2025-01-20 16:31:28,917 | INFO | __main__ - Sending message: {"gameId": "e575460d-eab0-4d85-83f2-433de44f64cd", "sport": "Baseball", "team1": "Team 8", "team2": "Team 13", "score1": 29, "score2": 11, "timestamp": "2025-01-20T16:31:28.917343"}
+2025-01-20 16:31:29,919 | INFO | __main__ - Sending message: {"gameId": "e0b6e1c4-f534-4a3e-abe1-41647c4df80f", "sport": "Basketball", "team1": "Team 9", "team2": "Team 14", "score1": 30, "score2": 12, "timestamp": "2025-01-20T16:31:29.919767"}
+2025-01-20 16:31:30,925 | INFO | __main__ - Sending message: {"gameId": "6ad6026d-a9a8-4558-bc3d-514fd5c6c175", "sport": "Football", "team1": "Team 0", "team2": "Team 5", "score1": 1, "score2": 13, "timestamp": "2025-01-20T16:31:30.925442"}
+2025-01-20 16:31:31,932 | INFO | __main__ - Sending message: {"gameId": "910ba9fa-58b5-474a-a026-e29ffe99b161", "sport": "Hockey", "team1": "Team 1", "team2": "Team 6", "score1": 2, "score2": 14, "timestamp": "2025-01-20T16:31:31.931890"}
+2025-01-20 16:31:32,935 | INFO | __main__ - Sending message: {"gameId": "2b56d9d7-9f3e-4ef1-8f81-353597f4e1ae", "sport": "Baseball", "team1": "Team 2", "team2": "Team 7", "score1": 3, "score2": 15, "timestamp": "2025-01-20T16:31:32.935068"}
+2025-01-20 16:31:33,939 | INFO | __main__ - Sending message: {"gameId": "505a9cb8-eda1-4b9d-9be7-91a22e8a15c5", "sport": "Basketball", "team1": "Team 3", "team2": "Team 8", "score1": 4, "score2": 16, "timestamp": "2025-01-20T16:31:33.939389"}
+2025-01-20 16:31:34,944 | INFO | __main__ - Sending message: {"gameId": "afe68903-47ff-4a25-871b-baddd7e1f8c9", "sport": "Football", "team1": "Team 4", "team2": "Team 9", "score1": 5, "score2": 17, "timestamp": "2025-01-20T16:31:34.944851"}
+2025-01-20 16:31:35,950 | INFO | __main__ - Sending message: {"gameId": "d5bd3cad-1337-461d-b72e-733bb74333ff", "sport": "Hockey", "team1": "Team 5", "team2": "Team 10", "score1": 6, "score2": 18, "timestamp": "2025-01-20T16:31:35.950449"}
+2025-01-20 16:31:36,954 | INFO | __main__ - Sending message: {"gameId": "19616823-5056-4b9f-bf10-51c51cbc4a0b", "sport": "Baseball", "team1": "Team 6", "team2": "Team 11", "score1": 7, "score2": 19, "timestamp": "2025-01-20T16:31:36.954036"}
+2025-01-20 16:31:37,956 | INFO | __main__ - Sending message: {"gameId": "58f266c5-0329-4b98-8b20-7332ffb6eb94", "sport": "Basketball", "team1": "Team 7", "team2": "Team 12", "score1": 8, "score2": 20, "timestamp": "2025-01-20T16:31:37.955991"}
+2025-01-20 16:31:38,957 | INFO | __main__ - Sending message: {"gameId": "e524d80e-980d-44b6-80d0-f8256afeff50", "sport": "Football", "team1": "Team 8", "team2": "Team 13", "score1": 9, "score2": 21, "timestamp": "2025-01-20T16:31:38.957111"}
+2025-01-20 16:31:39,961 | INFO | __main__ - Sending message: {"gameId": "7dfcb6aa-3d48-440e-ae0d-d2a3ff3bfcaa", "sport": "Hockey", "team1": "Team 9", "team2": "Team 14", "score1": 10, "score2": 1, "timestamp": "2025-01-20T16:31:39.961674"}
+2025-01-20 16:31:40,966 | INFO | __main__ - Sending message: {"gameId": "3bd6481b-2dd9-4f1c-bfa3-dd183b8544a7", "sport": "Baseball", "team1": "Team 0", "team2": "Team 5", "score1": 11, "score2": 2, "timestamp": "2025-01-20T16:31:40.966029"}
+2025-01-20 16:31:41,970 | INFO | __main__ - Sending message: {"gameId": "ff31ded2-a38d-4359-bc9e-f148bc73bcef", "sport": "Basketball", "team1": "Team 1", "team2": "Team 6", "score1": 12, "score2": 3, "timestamp": "2025-01-20T16:31:41.970517"}
+2025-01-20 16:31:42,972 | INFO | __main__ - Sending message: {"gameId": "f1418900-62b3-42f9-b02b-b0da213f845c", "sport": "Football", "team1": "Team 2", "team2": "Team 7", "score1": 13, "score2": 4, "timestamp": "2025-01-20T16:31:42.972626"}
+2025-01-20 16:31:43,975 | INFO | __main__ - Sending message: {"gameId": "22ee5330-219c-4f8d-a25a-b27b54b03daf", "sport": "Hockey", "team1": "Team 3", "team2": "Team 8", "score1": 14, "score2": 5, "timestamp": "2025-01-20T16:31:43.975056"}
+2025-01-20 16:31:44,981 | INFO | __main__ - Sending message: {"gameId": "82027207-9751-490a-baa0-f49c90a9dd6a", "sport": "Baseball", "team1": "Team 4", "team2": "Team 9", "score1": 15, "score2": 6, "timestamp": "2025-01-20T16:31:44.981279"}
+2025-01-20 16:31:45,984 | INFO | __main__ - Sending message: {"gameId": "7e89faf1-060a-4b24-a142-2c4c8f431bdb", "sport": "Basketball", "team1": "Team 5", "team2": "Team 10", "score1": 16, "score2": 7, "timestamp": "2025-01-20T16:31:45.983769"}
+2025-01-20 16:31:46,991 | INFO | __main__ - Sending message: {"gameId": "ddd7c09a-0a60-4e56-baaa-d42f01dc8dc5", "sport": "Football", "team1": "Team 6", "team2": "Team 11", "score1": 17, "score2": 8, "timestamp": "2025-01-20T16:31:46.990820"}
+2025-01-20 16:31:47,992 | INFO | __main__ - Sending message: {"gameId": "a02e9322-165b-4973-b4a6-175255744717", "sport": "Hockey", "team1": "Team 7", "team2": "Team 12", "score1": 18, "score2": 9, "timestamp": "2025-01-20T16:31:47.992744"}
+2025-01-20 16:31:48,999 | INFO | __main__ - Sending message: {"gameId": "4d5ca328-0d25-45fa-974f-6251a537002a", "sport": "Baseball", "team1": "Team 8", "team2": "Team 13", "score1": 19, "score2": 10, "timestamp": "2025-01-20T16:31:48.999281"}
+2025-01-20 16:31:50,000 | INFO | __main__ - Sending message: {"gameId": "10e8a5b2-95d0-4084-9a3d-ed821905a644", "sport": "Football", "team1": "Team 0", "team2": "Team 5", "score1": 21, "score2": 12, "timestamp": "2025-01-20T16:31:50.000761"}
+2025-01-20 16:31:51,003 | INFO | __main__ - Sending message: {"gameId": "44c4da75-4cd5-4999-8570-fbf25cd173d5", "sport": "Hockey", "team1": "Team 1", "team2": "Team 6", "score1": 22, "score2": 13, "timestamp": "2025-01-20T16:31:51.003096"}
+2025-01-20 16:31:52,009 | INFO | __main__ - Sending message: {"gameId": "e9f1239f-8e01-40fc-8e6e-0157c8b4f2ae", "sport": "Baseball", "team1": "Team 2", "team2": "Team 7", "score1": 23, "score2": 14, "timestamp": "2025-01-20T16:31:52.009244"}
+2025-01-20 16:31:53,016 | INFO | __main__ - Sending message: {"gameId": "091a6222-c25d-4efe-a974-e1e346c4a295", "sport": "Basketball", "team1": "Team 3", "team2": "Team 8", "score1": 24, "score2": 15, "timestamp": "2025-01-20T16:31:53.015905"}
+2025-01-20 16:31:54,022 | INFO | __main__ - Sending message: {"gameId": "9402c193-2eb9-4069-9771-9b63ce2abcdb", "sport": "Football", "team1": "Team 4", "team2": "Team 9", "score1": 25, "score2": 16, "timestamp": "2025-01-20T16:31:54.022530"}
+2025-01-20 16:31:55,029 | INFO | __main__ - Sending message: {"gameId": "56ab9485-a083-421b-8b9d-9aa68e547f60", "sport": "Hockey", "team1": "Team 5", "team2": "Team 10", "score1": 26, "score2": 17, "timestamp": "2025-01-20T16:31:55.028953"}
+2025-01-20 16:31:56,033 | INFO | __main__ - Sending message: {"gameId": "5d36284d-3924-4153-9eca-92078e03af6b", "sport": "Baseball", "team1": "Team 6", "team2": "Team 11", "score1": 27, "score2": 18, "timestamp": "2025-01-20T16:31:56.032976"}
+2025-01-20 16:31:57,036 | INFO | __main__ - Sending message: {"gameId": "0bfbe924-fa18-4a2a-b048-98876a6038ca", "sport": "Basketball", "team1": "Team 7", "team2": "Team 12", "score1": 28, "score2": 19, "timestamp": "2025-01-20T16:31:57.036518"}
+2025-01-20 16:31:58,042 | INFO | __main__ - Sending message: {"gameId": "f100458c-1f57-4624-a178-9c545fe04b3a", "sport": "Football", "team1": "Team 8", "team2": "Team 13", "score1": 29, "score2": 20, "timestamp": "2025-01-20T16:31:58.041947"}
+2025-01-20 16:31:59,044 | INFO | __main__ - Sending message: {"gameId": "9683d152-4236-4632-bfca-1be438eedf18", "sport": "Hockey", "team1": "Team 9", "team2": "Team 14", "score1": 30, "score2": 21, "timestamp": "2025-01-20T16:31:59.044361"}
+2025-01-20 16:32:00,049 | INFO | __main__ - Sending message: {"gameId": "61c6382a-7d51-438c-9a79-aa1ceb465b83", "sport": "Baseball", "team1": "Team 0", "team2": "Team 5", "score1": 1, "score2": 1, "timestamp": "2025-01-20T16:32:00.049245"}
+2025-01-20 16:32:01,055 | INFO | __main__ - Sending message: {"gameId": "af957eef-a48a-4517-b5e9-99a29ed9cd37", "sport": "Basketball", "team1": "Team 1", "team2": "Team 6", "score1": 2, "score2": 2, "timestamp": "2025-01-20T16:32:01.055686"}
+2025-01-20 16:32:02,061 | INFO | __main__ - Sending message: {"gameId": "e526542f-9160-43c2-889b-1b24e4931a70", "sport": "Football", "team1": "Team 2", "team2": "Team 7", "score1": 3, "score2": 3, "timestamp": "2025-01-20T16:32:02.061079"}
+2025-01-20 16:32:03,065 | INFO | __main__ - Sending message: {"gameId": "6701c62b-fbde-471c-83d2-dfc1b5414a13", "sport": "Hockey", "team1": "Team 3", "team2": "Team 8", "score1": 4, "score2": 4, "timestamp": "2025-01-20T16:32:03.065751"}
