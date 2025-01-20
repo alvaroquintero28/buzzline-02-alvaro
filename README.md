@@ -1,4 +1,4 @@
-# buzzline-02-case
+# buzzline-02-alvaro
 
 Streaming data is often too big for any one machine. 
 A streaming platform helps organize our pipelines.
