@@ -22,8 +22,12 @@ In this task, we will download, install, configure, and start a local Kafka serv
 
 1. Install Windows Subsystem for Linux (Windows machines only)
 2. Install Kafka Streaming Platform
-3. Start the Zookeeper service (leave the terminal open).
+3. Start the Zookeeper service (leave the terminal open). 
+"cd ~/kafka
+bin/zookeeper-server-start.sh config/zookeeper.properties"
 4. Start the Kafka service (leave the terminal open).
+"cd ~/kafka
+bin/kafka-server-start.sh config/server.properties"
 
 For detailed instructions, see:
 
@@ -34,16 +38,17 @@ For detailed instructions, see:
 
 Copy/fork this project into your GitHub account
 and create your own version of this project to run and experiment with. 
-Name it `buzzline-02-yourname` where yourname is something unique to you.
+Name it `buzzline-02-alvaro` where yourname is something unique to you.
 Follow the instructions in [FORK-THIS-REPO.md](https://github.com/denisecase/buzzline-01-case/blob/main/docs/FORK-THIS-REPO.md)).
     
 
 ## Task 3. Manage Local Project Virtual Environment
 
 Follow the instructions in [MANAGE-VENV.md](https://github.com/denisecase/buzzline-01-case/blob/main/docs/MANAGE-VENV.md) to:
-1. Create your .venv
-2. Activate .venv
-3. Install the required dependencies using requirements.txt.
+1. Create your .venv "python3 -m venv .venv"
+2. Activate .venv "source .venv/bin/activate"
+3. Install the required dependencies using requirements.txt. "python3 -m pip install --upgrade pip setuptools wheel
+python3 -m pip install --upgrade -r requirements.txt"
 
 ## Task 4. Start a Kafka Producer
 
@@ -52,16 +57,10 @@ Producers generate streaming data for our topics.
 In VS Code, open a terminal.
 Use the commands below to activate .venv, and start the producer. 
 
-Windows:
-```shell
-.venv\Scripts\activate
-py -m producers.kafka_producer_case
-```
-
 Mac/Linux:
 ```zsh
 source .venv/bin/activate
-python3 -m producers.kafka_producer_case
+python3 -m producers.alvaro_kafka_producer
 ```
 
 ## Task 5. Start a Kafka Consumer
@@ -71,16 +70,10 @@ Consumers process data from topics or logs in real time.
 In VS Code, open a NEW terminal in your root project folder. 
 Use the commands below to activate .venv, and start the consumer. 
 
-Windows:
-```shell
-.venv\Scripts\activate
-py -m consumers.kafka_consumer_case
-```
-
 Mac/Linux:
 ```zsh
 source .venv/bin/activate
-python3 -m consumers.kafka_consumer_case
+python3 -m consumers.alvaro_kafka_consumer
 ```
 
 ## Later Work Sessions
